@@ -56,7 +56,7 @@ After confirming both virtual machines are on the same network and everything is
 <img src="https://i.gyazo.com/76d48a6ad8975922be2afffa5b5b92e6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.gyazo.com/bc3ef06e326e3590caae7a36620f7356.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.gyazo.com/2c112cde1b8422bd2992ab3d70d99fa7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After that, I created an inbound security rule under the linux virtual machine network security group on azure to block the incoming ping traffic to observe what happens. As you can see, the request keeps timing out due to the rule that was created.
