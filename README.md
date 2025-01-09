@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create Virtual Machines
 - Observe ICMP Traffic
-- Configuring a Firewall [Network Security Group]
+- Configure a Firewall [Network Security Group]
 - Observe SSH, DHCP, DNS, and RDP Traffic
 
 <h2>Actions and Observations</h2>
