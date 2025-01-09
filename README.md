@@ -59,7 +59,7 @@ After confirming that both virtual machines are on the same network and ensuring
 <img src="https://i.gyazo.com/2c112cde1b8422bd2992ab3d70d99fa7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="[https://i.gyazo.com/2c112cde1b8422bd2992ab3d70d99fa7.png](https://i.gyazo.com/f0659314f7206e6b99bce2d495a4c207.png)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.gyazo.com/f0659314f7206e6b99bce2d495a4c207.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed its effects. As expected, the requests timed out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness. Once the rule was deleted, traffic resumed as expected.
