@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Create Virtual Machines
 - Observe ICMP Traffic
-- Configure a Firewall [Network Security Group]
+- Configure a Firewall (Network Security Group)
 - Observe SSH, DHCP, DNS, and RDP Traffic
 
 <h2>Actions and Observations</h2>
@@ -42,10 +42,10 @@ First, I created a resource group, a windows 10 virtual machine, and a linux vir
 <br />
 
 <p>
-<img src="https://i.gyazo.com/a4d021ef7b93f320efbc2029eb944210.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, I started the windows virtual machine through remote desktop connection and observed all of the ICMP traffic using WireShark and the ping command.
 </p>
 <br />
 
@@ -53,6 +53,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After that, I created a firewall (network security group) on azure to block the incoming traffic to observe what happens when pinging. As you can see, the request keeps timing out due to the rule that was created.
 </p>
 <br />
