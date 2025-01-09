@@ -48,7 +48,7 @@ First, I created a resource group, a Windows 10 virtual machine, and a Linux vir
 <img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command.
+After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command on Windows PowerShell.
 </p>
 <br />
 
@@ -63,5 +63,13 @@ After confirming that both virtual machines are on the same network and ensuring
 </p>
 <p>
 After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed its effects. As expected, the requests timed out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness. Once the rule was deleted, traffic resumed as expected.
+</p>
+<br />
+
+<p>
+<img src="https://i.gyazo.com/ba56235e299416dce8b662fd0d5f7857.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+I observed all SSH traffic after logging into a Linux virtual machine using the SSH command in Windows PowerShell and filtered it in Wireshark. Additionally, I performed a few tasks in PowerShell, such as creating a text file and executing several commands.
 </p>
 <br />
