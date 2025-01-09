@@ -70,6 +70,6 @@ After creating an inbound security rule under the Linux virtual machine's networ
 <img src="https://i.gyazo.com/ba56235e299416dce8b662fd0d5f7857.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all SSH traffic after logging into a Linux virtual machine using the SSH command in Windows PowerShell and filtered it in Wireshark. Additionally, I performed a few tasks in PowerShell, such as creating a text file and executing several commands.
+I observed all SSH traffic after logging into the Linux virtual machine using the SSH command in Windows PowerShell and filtered it in Wireshark. Additionally, I performed a few tasks in PowerShell, such as creating a text file and executing several commands.
 </p>
 <br />
