@@ -45,6 +45,9 @@ First, I created a resource group, a windows 10 virtual machine, and a linux vir
 <img src="https://i.gyazo.com/e541b033f5b78dfdec6a297e9391b1fa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+<img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 After confirming both virtual machines are on the same network and everything is setup correctly, I started the windows virtual machine through remote desktop connection and observed all of the ICMP traffic using WireShark and the ping command.
 </p>
 <br />
