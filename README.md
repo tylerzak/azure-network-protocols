@@ -53,9 +53,12 @@ After confirming both virtual machines are on the same network and everything is
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.gyazo.com/76d48a6ad8975922be2afffa5b5b92e6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After that, I created a firewall (network security group) on azure to block the incoming traffic to observe what happens when using the ping command. As you can see, the request keeps timing out due to the rule that was created.
+<img src="https://i.gyazo.com/bc3ef06e326e3590caae7a36620f7356.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+After that, I created a firewall (network security group) on azure to block the incoming ping traffic to observe what happens. As you can see, the request keeps timing out due to the rule that was created.
 </p>
 <br />
