@@ -37,7 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.gyazo.com/fa1201a085a12bd543df669a529ec57c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-First, I created a resource group, a windows 10 virtual machine, and a linux virtual machine.
+First, I created a resource group, a Windows 10 virtual machine, and a Linux virtual machine.
 </p>
 <br />
 
@@ -48,7 +48,7 @@ First, I created a resource group, a windows 10 virtual machine, and a linux vir
 <img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After confirming both virtual machines are on the same network and everything is setup correctly, I started the windows virtual machine through remote desktop connection and observed all of the ICMP traffic between both virtual machines using WireShark and the ping command.
+After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command.
 </p>
 <br />
 
@@ -59,6 +59,6 @@ After confirming both virtual machines are on the same network and everything is
 <img src="https://i.gyazo.com/2c112cde1b8422bd2992ab3d70d99fa7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After that, I created an inbound security rule under the linux virtual machine network security group on azure to block the incoming ping traffic to observe what happens. As you can see, the request keeps timing out due to the rule that was created.
+After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed the effects. As expected, the requests kept timing out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness.
 </p>
 <br />
