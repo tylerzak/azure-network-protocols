@@ -89,6 +89,6 @@ I observed all DHCP traffic after creating a .bat file. After running the file i
 <img src="https://i.gyazo.com/8bdce5af630cfa5ba7f0c39a325a1583.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all DNS traffic on Wireshark after executing the nslookup command in PowerShell. For this example, I used "disney". As you can see, the nslookup query for "disney.com" returned an IP address from a non-authoritative DNS server.
+I observed all DNS traffic in Wireshark after executing the nslookup command in PowerShell. For this example, I used "disney." As shown, the nslookup query for "disney.com" returned an IP address from a non-authoritative DNS server.
 </p>
 <br />
