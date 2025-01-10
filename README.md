@@ -73,3 +73,14 @@ After creating an inbound security rule under the Linux virtual machine's networ
 I observed all SSH traffic after logging into the Linux virtual machine using the SSH command in Windows PowerShell and filtered it in Wireshark. Additionally, I performed a few tasks in PowerShell, such as creating a text file and executing several commands.
 </p>
 <br />
+
+<p>
+<img src="https://i.gyazo.com/cd8f32b45df4e5590622637723aec201.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.gyazo.com/34704c69643a795a0c32af7072786376.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic.
+</p>
+<br />
