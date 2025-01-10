@@ -84,3 +84,11 @@ I observed all SSH traffic after logging into the Linux virtual machine using th
 I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic in Wireshark, filtering it specifically for DHCP. The sequence displayed in Wireshark represents a typical DHCP lease cycle, where the client requests an IP address, receives an offer, confirms the offer, and later releases the IP address.
 </p>
 <br />
+
+<p>
+<img src="https://i.gyazo.com/8bdce5af630cfa5ba7f0c39a325a1583.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+I observed all DNS traffic on Wireshark after executing the nslookup command in PowerShell. For this example, I used "disney". As you can see, the nslookup query for "disney.com" returned an IP address from a non-authoritative DNS server.
+</p>
+<br />
