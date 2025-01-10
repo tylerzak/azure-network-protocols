@@ -37,7 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.gyazo.com/fa1201a085a12bd543df669a529ec57c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-First, I created a resource group, a Windows 10 virtual machine, and a Linux virtual machine on Azure.
+First, I created a resource group along with a Windows 10 virtual machine and a Linux virtual machine on Azure.
 </p>
 <br />
 
@@ -48,7 +48,7 @@ First, I created a resource group, a Windows 10 virtual machine, and a Linux vir
 <img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command on Windows PowerShell.
+After confirming that both virtual machines were on the same network and ensuring everything was set up correctly, I started the Windows virtual machine using Remote Desktop Connection. I then monitored all ICMP traffic between the two virtual machines with Wireshark and the ping command in Windows PowerShell.
 </p>
 <br />
 
@@ -62,7 +62,7 @@ After confirming that both virtual machines are on the same network and ensuring
 <img src="https://i.gyazo.com/f0659314f7206e6b99bce2d495a4c207.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed its effects. As expected, the requests timed out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness. Once the rule was deleted, traffic resumed as expected.
+Next, I created an inbound security rule in the Linux virtual machine's network security group on Azure to block incoming ping traffic. I observed the effects of this rule, which caused the ping requests to time out as expected. Additionally, Wireshark was unable to capture any replies, further confirming that the rule was working. After deleting the rule, traffic resumed normally.
 </p>
 <br />
 
@@ -70,7 +70,7 @@ After creating an inbound security rule under the Linux virtual machine's networ
 <img src="https://i.gyazo.com/ba56235e299416dce8b662fd0d5f7857.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all SSH traffic after logging into the Linux virtual machine using the SSH command in Windows PowerShell and filtered it in Wireshark. Additionally, I performed a few tasks in PowerShell, such as creating a text file and executing several commands.
+I then observed all SSH traffic by logging into the Linux virtual machine via SSH in Windows PowerShell and filtered it in Wireshark. During this session, I also performed a few tasks in PowerShell, such as creating a text file and running several commands.
 </p>
 <br />
 
@@ -81,7 +81,7 @@ I observed all SSH traffic after logging into the Linux virtual machine using th
 <img src="https://i.gyazo.com/34704c69643a795a0c32af7072786376.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic in Wireshark, filtering it specifically for DHCP. The sequence displayed in Wireshark represents a typical DHCP lease cycle, where the client requests an IP address, receives an offer, confirms the offer, and later releases the IP address.
+Following this, I observed all DHCP traffic after creating a .bat file. Upon running the file in Windows PowerShell, I monitored the traffic in Wireshark, filtering it specifically for DHCP. The sequence displayed in Wireshark showed the typical DHCP lease cycle, where the client requests an IP address, receives an offer, confirms it, and later releases the IP address.
 </p>
 <br />
 
@@ -89,7 +89,7 @@ I observed all DHCP traffic after creating a .bat file. After running the file i
 <img src="https://i.gyazo.com/8bdce5af630cfa5ba7f0c39a325a1583.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all DNS traffic in Wireshark after executing the nslookup command in PowerShell. For this example, I used "disney." As shown, the nslookup query for "disney.com" returned an IP address from a non-authoritative DNS server.
+I also observed all DNS traffic in Wireshark after executing the nslookup command in PowerShell. For this example, I queried the domain "disney.com." As shown, the nslookup query returned an IP address from a non-authoritative DNS server.
 </p>
 <br />
 
@@ -97,6 +97,6 @@ I observed all DNS traffic in Wireshark after executing the nslookup command in 
 <img src="https://i.gyazo.com/d2880b9537f7d3a5e9935cd898f6b064.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lastly, I observed all RDP traffic and filtered for TCP port 3389, as this is the port used by RDP. I noticed a continuous stream of traffic, as the RDP protocol constantly transmits live data between computers.
+Lastly, I monitored all RDP traffic and filtered it for TCP port 3389, as this is the port used by RDP. I noticed a continuous stream of traffic, since the RDP protocol constantly transmits live data between computers.
 </p>
 <br />
