@@ -42,16 +42,19 @@ First, I created a resource group, a Windows 10 virtual machine, and a Linux vir
 <br />
 
 <p>
+After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command on Windows PowerShell.
+</p>
+<p>
 <img src="https://i.gyazo.com/e541b033f5b78dfdec6a297e9391b1fa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-After confirming that both virtual machines are on the same network and ensuring everything is set up correctly, I started the Windows virtual machine through Remote Desktop Connection. I then observed all ICMP traffic between the two virtual machines using Wireshark and the ping command on Windows PowerShell.
-</p>
 <br />
 
+<p>
+After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed its effects. As expected, the requests timed out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness. Once the rule was deleted, traffic resumed as expected.
+</p>
 <p>
 <img src="https://i.gyazo.com/76d48a6ad8975922be2afffa5b5b92e6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -60,9 +63,6 @@ After confirming that both virtual machines are on the same network and ensuring
 </p>
 <p>
 <img src="https://i.gyazo.com/f0659314f7206e6b99bce2d495a4c207.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-After creating an inbound security rule under the Linux virtual machine's network security group on Azure to block incoming ping traffic, I observed its effects. As expected, the requests timed out due to the rule I had implemented. Additionally, Wireshark was unable to capture any replies, further confirming the rule's effectiveness. Once the rule was deleted, traffic resumed as expected.
 </p>
 <br />
 
@@ -75,12 +75,12 @@ I observed all SSH traffic after logging into the Linux virtual machine using th
 <br />
 
 <p>
+I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic.
+</p>
+<p>
 <img src="https://i.gyazo.com/cd8f32b45df4e5590622637723aec201.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <img src="https://i.gyazo.com/34704c69643a795a0c32af7072786376.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic.
 </p>
 <br />
