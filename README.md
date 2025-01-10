@@ -92,3 +92,11 @@ I observed all DHCP traffic after creating a .bat file. After running the file i
 I observed all DNS traffic in Wireshark after executing the nslookup command in PowerShell. For this example, I used "disney." As shown, the nslookup query for "disney.com" returned an IP address from a non-authoritative DNS server.
 </p>
 <br />
+
+<p>
+<img src="https://i.gyazo.com/d2880b9537f7d3a5e9935cd898f6b064.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lastly, I observed all RDP traffic and filtered for TCP port 3389, as this is the port used by RDP. I noticed a continuous stream of traffic, as the RDP protocol constantly transmits live data between computers.
+</p>
+<br />
