@@ -37,7 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.gyazo.com/fa1201a085a12bd543df669a529ec57c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-First, I created a resource group, a Windows 10 virtual machine, and a Linux virtual machine.
+First, I created a resource group, a Windows 10 virtual machine, and a Linux virtual machine on Azure.
 </p>
 <br />
 
