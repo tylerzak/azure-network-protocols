@@ -48,7 +48,7 @@ First, I created a resource group along with a Windows 10 virtual machine and a 
 <img src="https://i.gyazo.com/7520919cc7d472f3d218f08497ee083e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After confirming that both virtual machines were on the same network and ensuring everything was set up correctly, I started the Windows virtual machine using Remote Desktop Connection. I then monitored all ICMP traffic between the two virtual machines with Wireshark and the ping command in Windows PowerShell.
+After confirming that both virtual machines were on the same network and ensuring everything was set up correctly, I started the Windows virtual machine using Remote Desktop Connection. I then monitored all ICMP traffic between the two virtual machines with Wireshark and the ping command in Windows PowerShell. ICMP is used for network diagnostics and error reporting; this traffic helps verify connectivity and measure network performance.
 </p>
 <br />
 
@@ -70,7 +70,7 @@ Next, I created an inbound security rule in the Linux virtual machine's network 
 <img src="https://i.gyazo.com/ba56235e299416dce8b662fd0d5f7857.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I then observed all SSH traffic by logging into the Linux virtual machine via SSH in Windows PowerShell and filtered it in Wireshark. During this session, I also performed a few tasks in PowerShell, such as creating a text file and running several commands.
+I then observed all SSH traffic by logging into the Linux virtual machine via SSH in Windows PowerShell and filtered it in Wireshark. SSH (Secure Shell) is a protocol used to securely access and manage remote systems over a network. It provides encrypted communication between the client and server, ensuring that data remains confidential and protected from interception. During this session, I also performed a few tasks in PowerShell, such as creating a text file and running several commands.
 </p>
 <br />
 
