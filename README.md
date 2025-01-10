@@ -81,6 +81,6 @@ I observed all SSH traffic after logging into the Linux virtual machine using th
 <img src="https://i.gyazo.com/34704c69643a795a0c32af7072786376.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic in Wireshark, filtering it specifically for DHCP. The sequence you see on Wireshark represents a typical DHCP lease cycle, where a client requests an IP address, receives an offer, confirms the offer, and later releases the IP address.
+I observed all DHCP traffic after creating a .bat file. After running the file in Windows PowerShell, I monitored the traffic in Wireshark, filtering it specifically for DHCP. The sequence displayed in Wireshark represents a typical DHCP lease cycle, where the client requests an IP address, receives an offer, confirms the offer, and later releases the IP address.
 </p>
 <br />
